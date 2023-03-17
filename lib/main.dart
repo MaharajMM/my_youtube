@@ -1,3 +1,4 @@
+import 'package:my_youtube/registration_form.dart';
 import 'package:my_youtube/src/constants/imports.dart';
 
 void main() {
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: MAppTheme.lightTheme,
       darkTheme: MAppTheme.darkTheme,
-      themeMode: ThemeMode.light,
-      home: const SplashScreen(),
+      themeMode: ThemeMode.system,
+      home: SplashScreen(),
     );
   }
 }

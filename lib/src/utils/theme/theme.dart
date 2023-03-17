@@ -26,7 +26,7 @@ class MAppTheme {
     brightness: Brightness.dark,
     textTheme: TextTheme(
       displayMedium: GoogleFonts.montserrat(
-        color: Colors.black87,
+        color: Colors.white,
       ),
     ),
   );
