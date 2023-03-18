@@ -16,3 +16,9 @@ const String kOnBoardingSubTitle3 = "Become famous and earn money";
 const String kOnBoardingCounter1 = "1/3";
 const String kOnBoardingCounter2 = "2/3";
 const String kOnBoardingCounter3 = "3/3";
+
+// Welcome Screen Text
+
+const String kWelcomeTitle = "Building Awesome UI";
+const String kWelcomeSubTitle =
+    "Experience the power of visually stunning user interfaces with our intuitive design tools and resources.";

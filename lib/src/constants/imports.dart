@@ -14,6 +14,6 @@ export 'package:my_youtube/src/constants/utilities.dart';
 
 export 'package:my_youtube/src/features/authentication/controllers/splash_screen_controller.dart';
 
-export 'package:my_youtube/src/utils/theme/theme.dart';
+export 'package:my_youtube/src/utils/theme.dart';
 
 export 'package:get/get.dart';

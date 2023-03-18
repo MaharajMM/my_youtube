@@ -6,8 +6,8 @@ const kSecondaryColor = Color(0xFF272727);
 const kAccentColor = Color(0xFF001BFF);
 const kBgColor = Color(0xFFD0D5FF);
 
-const kCardBgColor = Colors.white;
-const kWhiteColor = Colors.black;
+const kWhiteColor = Colors.white;
+//const kWhiteColor = Colors.black;
 const kDarkColor = Color(0xFF000000);
 
 // Onboarding Colors
