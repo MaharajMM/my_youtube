@@ -11,3 +11,6 @@ const String kOnboarding3 = "assets/images/onboarding_screen_3.png";
 // -- Welcome Screen Image
 
 const String kWelcomeScreenImage = "assets/images/welcome_screen_image.png";
+
+// Login Screen image
+const String kLoginScreenImage = "assets/logo/google-logo.png";

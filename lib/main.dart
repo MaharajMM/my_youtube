@@ -1,4 +1,3 @@
-import 'package:my_youtube/registration_form.dart';
 import 'package:my_youtube/src/constants/imports.dart';
 
 void main() {

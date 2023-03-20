@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:my_youtube/src/constants/imports.dart';
 
 const kPrimaryColor = Color(0xFFFFE400);

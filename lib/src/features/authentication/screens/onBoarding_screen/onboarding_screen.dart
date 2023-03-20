@@ -1,4 +1,3 @@
-import 'package:google_fonts/google_fonts.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:my_youtube/src/constants/imports.dart';
 import 'package:my_youtube/src/features/authentication/controllers/onBoarding_controller.dart';

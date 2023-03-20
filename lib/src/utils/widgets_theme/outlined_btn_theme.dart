@@ -7,7 +7,11 @@ class KOutlinedBtnTheme {
 
   static final lightOutilnedBtnTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      shape: const RoundedRectangleBorder(),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(
+          Radius.circular(5),
+        ),
+      ),
       foregroundColor: kSecondaryColor,
       side: const BorderSide(
         color: kSecondaryColor,
@@ -21,7 +25,11 @@ class KOutlinedBtnTheme {
   // Dark Theme
   static final darkoutlinedBtnTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      shape: const RoundedRectangleBorder(),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(
+          Radius.circular(5),
+        ),
+      ),
       foregroundColor: kWhiteColor,
       side: const BorderSide(
         color: kWhiteColor,

@@ -12,8 +12,9 @@ export 'package:my_youtube/src/features/authentication/screens/splash_screen/spl
 export 'package:flutter/material.dart';
 export 'package:my_youtube/src/constants/utilities.dart';
 
-export 'package:my_youtube/src/features/authentication/controllers/splash_screen_controller.dart';
+export 'package:my_youtube/src/common_widgets/fade_in_animation/fade_in_animation_controller.dart';
 
 export 'package:my_youtube/src/utils/theme.dart';
 
 export 'package:get/get.dart';
+export 'package:google_fonts/google_fonts.dart';

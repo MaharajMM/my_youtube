@@ -1,9 +1,11 @@
+import 'package:my_youtube/src/common_widgets/fade_in_animation/fade_in_animation_model.dart';
+
+import '../../../../common_widgets/fade_in_animation/animation_design.dart';
 import '../../../../constants/imports.dart';
 
+// ignore: must_be_immutable
 class SplashScreen extends StatelessWidget {
   SplashScreen({super.key});
-
-  final splashController = Get.put(SplashScreenController());
 
   bool animate = false;
   @override
@@ -14,64 +16,59 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    splashController.startAnimation();
+
+    final splashController = Get.put(FadeInAnimationController());
+    splashController.startSplashAnimation();
+
     return Scaffold(
       body: Stack(
         children: [
-          Obx(
-            () => AnimatedPositioned(
-                duration: const Duration(milliseconds: 1600),
-                top: 80,
-                left: splashController.animate.value ? kDefaultSize : -80,
-                child: AnimatedOpacity(
-                  duration: const Duration(milliseconds: 1600),
-                  opacity: splashController.animate.value ? 1 : 0,
-                  child: const Text(
-                    kAppTagLine,
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: kDarkColor,
-                    ),
-                  ),
-                )),
-          ),
-          Obx(
-            () => AnimatedPositioned(
-              duration: const Duration(milliseconds: 1600),
-              bottom: splashController.animate.value ? 300 : 0,
-              //left: 100,
-              child: AnimatedOpacity(
-                duration: Duration(milliseconds: 1600),
-                opacity: splashController.animate.value ? 1 : 0,
-                child: SizedBox(
-                  height: getDeviceHeight(250),
-                  child: const Image(
-                    image: AssetImage(
-                      kSplashImage2,
-                    ),
-                    fit: BoxFit.fill,
-                  ),
-                ),
+          KFadeInAnimation(
+            durationInMS: 1500,
+            animatePosition: KAnimatePosition(
+              topBefore: 80,
+              topAfter: 80,
+              leftAfter: 90,
+              leftBefore: -80,
+            ),
+            child: const Text(
+              kAppTagLine,
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),
-          Obx(
-            () => AnimatedPositioned(
-              duration: Duration(milliseconds: 2000),
-              bottom: splashController.animate.value ? 100 : 0,
-              right: kDefaultSize,
-              child: AnimatedOpacity(
-                duration: const Duration(milliseconds: 2000),
-                opacity: splashController.animate.value ? 1 : 0,
-                child: Container(
-                  width: kSplashContainerSize,
-                  height: kSplashContainerSize,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
-                    color: kPrimaryColor,
-                  ),
+          KFadeInAnimation(
+            durationInMS: 1500,
+            animatePosition: KAnimatePosition(
+              bottomBefore: 0,
+              bottomAfter: 300,
+            ),
+            child: SizedBox(
+              height: getDeviceHeight(250),
+              child: const Image(
+                image: AssetImage(
+                  kSplashImage2,
                 ),
+                fit: BoxFit.fill,
+              ),
+            ),
+          ),
+          KFadeInAnimation(
+            durationInMS: 1600,
+            animatePosition: KAnimatePosition(
+              bottomAfter: 100,
+              bottomBefore: 0,
+              rightBefore: kDefaultSize,
+              rightAfter: kDefaultSize,
+            ),
+            child: Container(
+              width: kSplashContainerSize,
+              height: kSplashContainerSize,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(100),
+                color: kPrimaryColor,
               ),
             ),
           ),

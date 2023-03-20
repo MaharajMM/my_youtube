@@ -22,3 +22,16 @@ const String kOnBoardingCounter3 = "3/3";
 const String kWelcomeTitle = "Building Awesome UI";
 const String kWelcomeSubTitle =
     "Experience the power of visually stunning user interfaces with our intuitive design tools and resources.";
+
+// Login Screen Text
+const String kLoginTitle = "Welcome Back, ";
+const String kLoginSubTitle = "Make it work, make it right, make it fast.";
+const String kRemberMe = "Remember me?";
+
+const String kDontHave = "Don't have an account? ";
+
+// SignUp Screen Text
+const String kSignUpTitle = "Get On Board!";
+const String kSignUpSubTitle =
+    "Create your profile to start your Journey with us...";
+const String kAlreadyHave = "Already have an account? ";
