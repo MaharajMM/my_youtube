@@ -28,7 +28,7 @@ class SplashScreen extends StatelessWidget {
             animatePosition: KAnimatePosition(
               topBefore: 80,
               topAfter: 80,
-              leftAfter: 90,
+              leftAfter: 80,
               leftBefore: -80,
             ),
             child: const Text(

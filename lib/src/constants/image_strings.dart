@@ -14,3 +14,6 @@ const String kWelcomeScreenImage = "assets/images/welcome_screen_image.png";
 
 // Login Screen image
 const String kLoginScreenImage = "assets/logo/google-logo.png";
+
+//Forgot Password screen
+const String kForgotPasswordImage = "assets/images/forgot_password.png";

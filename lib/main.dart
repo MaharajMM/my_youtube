@@ -1,3 +1,4 @@
+import 'package:my_youtube/cimage.dart';
 import 'package:my_youtube/src/constants/imports.dart';
 
 void main() {
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
       theme: MAppTheme.lightTheme,
       darkTheme: MAppTheme.darkTheme,
       themeMode: ThemeMode.system,
+      //defaultTransition: Transition.leftToRightWithFade,
+      //transitionDuration: const Duration(milliseconds: 700),
       home: SplashScreen(),
     );
   }

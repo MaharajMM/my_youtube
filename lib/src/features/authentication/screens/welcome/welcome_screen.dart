@@ -50,7 +50,7 @@ class WelcomeScreen extends StatelessWidget {
                         kWelcomeTitle,
                         style: GoogleFonts.raleway(
                           textStyle: const TextStyle(
-                              fontSize: 27, fontWeight: FontWeight.bold),
+                              fontSize: 25, fontWeight: FontWeight.bold),
                         ),
                       ),
                       SizedBox(

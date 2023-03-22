@@ -6,15 +6,21 @@ class FormHeaderWidget extends StatelessWidget {
     required this.image,
     required this.title,
     required this.subtitle,
+    this.imageColor,
+    this.textAlign,
+    this.crossAxisAlignment = CrossAxisAlignment.start,
   });
 
   final String image, title, subtitle;
+  final CrossAxisAlignment crossAxisAlignment;
+  final Color? imageColor;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: crossAxisAlignment,
       children: [
         // section -1
         Image(
@@ -33,6 +39,7 @@ class FormHeaderWidget extends StatelessWidget {
         ),
         Text(
           subtitle,
+          textAlign: textAlign,
           style: GoogleFonts.poppins(
             textStyle: const TextStyle(
               fontSize: 16,

@@ -1,5 +1,6 @@
 import 'package:my_youtube/src/common_widgets/form/form_header_widget.dart';
 import 'package:my_youtube/src/constants/imports.dart';
+import 'package:my_youtube/src/features/authentication/screens/login_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -121,7 +122,10 @@ class SignUpScreen extends StatelessWidget {
                   //   height: getDeviceHeight(10),
                   // ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                      Get.to(() => const LoginScreen());
+                    },
                     child: Text.rich(
                       TextSpan(
                         text: kAlreadyHave,
